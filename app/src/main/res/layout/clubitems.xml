@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="20dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+
+
+    <TextView
+        android:id="@+id/tvClubname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Club Name"
+        android:textStyle="bold"
+        android:textSize="24sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/tvClubtype"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Club Type"
+        android:textSize="20sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/tvClubaddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Club Address"
+        android:textSize="20sp"
+        android:layout_marginHorizontal="20dp"
+        app:layout_constraintStart_toStartOf="@+id/tvClubname"
+        app:layout_constraintTop_toBottomOf="@+id/tvClubname"
+        />
+
+    <TextView
+        android:id="@+id/tvClubentryfee"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Club Fee"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@+id/tvClubname"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

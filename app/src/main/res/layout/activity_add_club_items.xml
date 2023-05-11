@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context=".AddClubItemsActivity">
+
+
+
+    <TextView
+        android:id="@+id/tvClubTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="20dp"
+        android:textSize="32sp"
+        android:text="Add CLub Items" />
+
+    <TextView
+        android:id="@+id/tvClubname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvClubTitle"
+        android:layout_marginTop="20dp"
+        android:textSize="22sp"
+        android:text="Club Name" />
+    <EditText
+        android:id="@+id/etClubname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/tvClubname"
+        app:layout_constraintStart_toStartOf="@+id/tvClubname"
+        />
+
+    <TextView
+        android:id="@+id/tvClubtype"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@+id/tvClubname"
+
+        app:layout_constraintTop_toBottomOf="@id/etClubname"
+        android:textSize="22sp"
+        android:text="Club Type" />
+    <EditText
+        android:id="@+id/etClubtype"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/tvClubtype"
+        app:layout_constraintStart_toStartOf="@+id/tvClubname"
+        />
+    <TextView
+        android:id="@+id/tvClubaddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@+id/tvClubname"
+
+        app:layout_constraintTop_toBottomOf="@id/etClubtype"
+        android:textSize="22sp"
+        android:text="CLub Address" />
+    <EditText
+        android:id="@+id/etClubaddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/tvClubaddress"
+        app:layout_constraintStart_toStartOf="@+id/tvClubname"
+        />
+    <TextView
+        android:id="@+id/tvClubEntryFee"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@+id/tvClubaddress"
+
+        app:layout_constraintTop_toBottomOf="@id/etClubaddress"
+        android:textSize="22sp"
+        android:text="CLub Entry Fee" />
+    <EditText
+        android:id="@+id/etClubEntryFee"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/tvClubEntryFee"
+        app:layout_constraintStart_toStartOf="@+id/tvClubname"
+        />
+
+    <Button
+        android:id="@+id/btSave"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Club"
+        app:layout_constraintTop_toBottomOf="@+id/etClubEntryFee"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
